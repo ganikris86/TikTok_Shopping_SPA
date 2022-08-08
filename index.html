@@ -97,7 +97,7 @@
         <!-- BEGIN TIKTOK PIXEL EVENT FUNCTIONS SCRIPT SECTION -->
         <script>
         	// BEGIN DO NOT EDIT SECTION 
-        	completeRegistration();
+        	// completeRegistration();
         	// END DO NOT EDIT SECTION 
 
         	function completeRegistration() {
@@ -191,52 +191,26 @@
 
         		// BEGIN - PLACE YOUR FUNCTIONS IN THIS SECTION 
 
-        		ttq.instance("CBEU5P3C77U9CRRSKATG").identify({
-					// ADVANCED MATCHING PARAMETERS
-					// Follow rules before hashing
-					sha256_email: '0c7e6a405862e402eb76a70f8a26fc732d07c32931e9fae9ab1582911d2e8a3b', 
-					sha256_phone_number: '9f7ec22d72092cd3c0b58726ed9c2d91b92e51a3f29837508fb2948bb22dd2fd',
-        		})		
+        		// ttq.instance("CBEU5P3C77U9CRRSKATG").identify({
+				// 	// ADVANCED MATCHING PARAMETERS
+				// 	// Follow rules before hashing
+				// 	sha256_email: '0c7e6a405862e402eb76a70f8a26fc732d07c32931e9fae9ab1582911d2e8a3b', 
+				// 	sha256_phone_number: '9f7ec22d72092cd3c0b58726ed9c2d91b92e51a3f29837508fb2948bb22dd2fd',
+        		// })		
 
-        		ttq.instance("CBEU5P3C77U9CRRSKATG").track("ViewContent",{
-					// EVENT PARAMETERS 
-					content_id: productId,
-					content_type: 'product',
-					content_category: 'Kids',
-					content_name: title,
-					price: price,
-					currency: 'AUD'
-        		}) 
+        		// ttq.instance("CBEU5P3C77U9CRRSKATG").track("ViewContent",{
+				// 	// EVENT PARAMETERS 
+				// 	content_id: productId,
+				// 	content_type: 'product',
+				// 	content_category: 'Kids',
+				// 	content_name: title,
+				// 	price: price,
+				// 	currency: 'AUD'
+        		// }) 
 
-				ttq.instance("CBF39ABC77U9HKUD62VG").track("ViewContent")
-
-        		// END - PLACE YOUR FUNCTIONS IN THIS SECTION 
-        	}
-
-        	function registrationComplete(email, phone) {
-        		// BEGIN HINT: UTILIZE THESE VARIABLES WHEN CONSTRUCTING YOUR CORRESPONDING TIKTOK PIXEL EVENT
-        		console.log("registrationComplete Function")
-        		console.log("email:" + " " + email);
-        		console.log("phonenumber:" + " " + phone);
-        		// END HINT: UTILIZE THESE VARIABLES WHEN CONSTRUCTING YOUR CORRESPONDING TIKTOK PIXEL EVENT
-
-
-        		// BEGIN - PLACE YOUR FUNCTIONS IN THIS SECTION 
-
-        		ttq.instance("CBEU5P3C77U9CRRSKATG").identify({
-        			/* ADVANCED MATCHING PARAMETERS */
-					// Follow rules before hashing
-					sha256_email: '0c7e6a405862e402eb76a70f8a26fc732d07c32931e9fae9ab1582911d2e8a3b', 
-					sha256_phone_number: '9f7ec22d72092cd3c0b58726ed9c2d91b92e51a3f29837508fb2948bb22dd2fd',
-        		})
-
-        		ttq.instance("CBEU5P3C77U9CRRSKATG").track("CompleteRegistration") 
+				// ttq.instance("CBF39ABC77U9HKUD62VG").track("ViewContent")
 
         		// END - PLACE YOUR FUNCTIONS IN THIS SECTION 
-
-        		// BEGIN DO NOT EDIT SECTION 
-        	    alert("Registration Complete");
-        	    // END DO NOT EDIT SECTION 
         	}
 
         	function initiateCheckout() {
@@ -245,44 +219,44 @@
         		if (retVal === true) { 
         		// BEGIN - PLACE YOUR FUNCTIONS IN THIS SECTION 
 
-				ttq.instance("CBEU5P3C77U9CRRSKATG").identify({
-        			// ADVANCED MATCHING PARAMETERS 
-					// Follow rules before hashing
-					sha256_email: '0c7e6a405862e402eb76a70f8a26fc732d07c32931e9fae9ab1582911d2e8a3b', 
-					sha256_phone_number: '9f7ec22d72092cd3c0b58726ed9c2d91b92e51a3f29837508fb2948bb22dd2fd',
-        		  })	
+				// ttq.instance("CBEU5P3C77U9CRRSKATG").identify({
+        		// 	// ADVANCED MATCHING PARAMETERS 
+				// 	// Follow rules before hashing
+				// 	sha256_email: '0c7e6a405862e402eb76a70f8a26fc732d07c32931e9fae9ab1582911d2e8a3b', 
+				// 	sha256_phone_number: '9f7ec22d72092cd3c0b58726ed9c2d91b92e51a3f29837508fb2948bb22dd2fd',
+        		//   })	
 
-                  // BEGIN HINT - MULTIPLE ITEMS 
-				  ttq.instance("CBEU5P3C77U9CRRSKATG").track('InitiateCheckout', {
-						contents: [
-						{
-							content_id: '5678AB',
-							content_type: 'product',
-							content_category: 'Kids',
-							content_name: 'Product 1',
-							quantity: 1,
-							price: 29.99,
-						},
-						{
-							content_id: '6521FJ',
-							content_type: 'product',
-							content_category: 'Kids',
-							content_name: 'Product 2',
-							quantity: 1,
-							price: 49.99,
-						},
-						{
-							content_id: '4098MD',
-							content_type: 'product',
-							content_category: 'Kids',
-							content_name: 'Product 3',
-							quantity: 1,
-							price: 199.99,
-						}],
-						value: 279.97,
-						currency: 'AUD',
-					})
-        		  // END HINT - MULTIPLE ITEMS 
+                //   // BEGIN HINT - MULTIPLE ITEMS 
+				//   ttq.instance("CBEU5P3C77U9CRRSKATG").track('InitiateCheckout', {
+				// 		contents: [
+				// 		{
+				// 			content_id: '5678AB',
+				// 			content_type: 'product',
+				// 			content_category: 'Kids',
+				// 			content_name: 'Product 1',
+				// 			quantity: 1,
+				// 			price: 29.99,
+				// 		},
+				// 		{
+				// 			content_id: '6521FJ',
+				// 			content_type: 'product',
+				// 			content_category: 'Kids',
+				// 			content_name: 'Product 2',
+				// 			quantity: 1,
+				// 			price: 49.99,
+				// 		},
+				// 		{
+				// 			content_id: '4098MD',
+				// 			content_type: 'product',
+				// 			content_category: 'Kids',
+				// 			content_name: 'Product 3',
+				// 			quantity: 1,
+				// 			price: 199.99,
+				// 		}],
+				// 		value: 279.97,
+				// 		currency: 'AUD',
+				// 	})
+        		//   // END HINT - MULTIPLE ITEMS 
 
         		// END - PLACE YOUR FUNCTIONS IN THIS SECTION 
 
@@ -298,44 +272,44 @@
         	// HINT: This is the dedicated function for Complete Payment
         	function completePayment() {
         		// BEGIN - PLACE YOUR FUNCTIONS IN THIS SECTION 
-				ttq.instance("CBEU5P3C77U9CRRSKATG").identify({
-        			// ADVANCED MATCHING PARAMETERS 
-					// Follow rules before hashing
-					sha256_email: '0c7e6a405862e402eb76a70f8a26fc732d07c32931e9fae9ab1582911d2e8a3b', 
-					sha256_phone_number: '9f7ec22d72092cd3c0b58726ed9c2d91b92e51a3f29837508fb2948bb22dd2fd',
-        		  })	
+				// ttq.instance("CBEU5P3C77U9CRRSKATG").identify({
+        		// 	// ADVANCED MATCHING PARAMETERS 
+				// 	// Follow rules before hashing
+				// 	sha256_email: '0c7e6a405862e402eb76a70f8a26fc732d07c32931e9fae9ab1582911d2e8a3b', 
+				// 	sha256_phone_number: '9f7ec22d72092cd3c0b58726ed9c2d91b92e51a3f29837508fb2948bb22dd2fd',
+        		//   })	
 
-                  // BEGIN HINT - MULTIPLE ITEMS 
-        		  ttq.instance("CBEU5P3C77U9CRRSKATG").track('CompletePayment', {
-						contents: [
-						{
-							content_id: '5678AB',
-							content_type: 'product',
-							content_category: 'Kids',
-							content_name: 'Product 1',
-							quantity: 1,
-							price: 29.99,
-						},
-						{
-							content_id: '6521FJ',
-							content_type: 'product',
-							content_category: 'Kids',
-							content_name: 'Product 2',
-							quantity: 1,
-							price: 49.99,
-						},
-						{
-							content_id: '4098MD',
-							content_type: 'product',
-							content_category: 'Kids',
-							content_name: 'Product 3',
-							quantity: 1,
-							price: 199.99,
-						}],
-						value: 279.97,
-						currency: 'AUD',
-        		  })
-        		  // END HINT - MULTIPLE ITEMS 
+                //   // BEGIN HINT - MULTIPLE ITEMS 
+        		//   ttq.instance("CBEU5P3C77U9CRRSKATG").track('CompletePayment', {
+				// 		contents: [
+				// 		{
+				// 			content_id: '5678AB',
+				// 			content_type: 'product',
+				// 			content_category: 'Kids',
+				// 			content_name: 'Product 1',
+				// 			quantity: 1,
+				// 			price: 29.99,
+				// 		},
+				// 		{
+				// 			content_id: '6521FJ',
+				// 			content_type: 'product',
+				// 			content_category: 'Kids',
+				// 			content_name: 'Product 2',
+				// 			quantity: 1,
+				// 			price: 49.99,
+				// 		},
+				// 		{
+				// 			content_id: '4098MD',
+				// 			content_type: 'product',
+				// 			content_category: 'Kids',
+				// 			content_name: 'Product 3',
+				// 			quantity: 1,
+				// 			price: 199.99,
+				// 		}],
+				// 		value: 279.97,
+				// 		currency: 'AUD',
+        		//   })
+        		//   // END HINT - MULTIPLE ITEMS 
 
         		// END - PLACE YOUR FUNCTIONS IN THIS SECTION 	
 
