@@ -45,6 +45,39 @@
 
 
         <title>Hello World | Store</title>
+
+	//MSA UET - START
+	 <script>
+	    (function(w,d,t,r,u)
+	    {
+	        var f,n,i;
+	        w[u]=w[u]||[],f=function()
+	        {
+	            var o={ti:"343179981", enableAutoSpaTracking: true};
+	            o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")
+	        },
+	        n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function()
+	        {
+	            var s=this.readyState;
+	            s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)
+	        },
+	        i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)
+	    })
+	    (window,document,"script","//bat.bing.com/bat.js","uetq");
+	 </script>
+	//MSA UET - END
+	
+	//MSA UET - TRACK EVENT - START
+	 <script>
+	    function uet_report_conversion() {
+	     window.uetq = window.uetq || [];
+	     window.uetq.push('event', 'PRODUCT_PURCHASE', {"ecomm_prodid":"DUMMY_PRODUCT_ID","ecomm_pagetype":"PURCHASE"});
+	    }
+	 </script>
+	//MSA UET - TRACK EVENT - END
+
+
+	    
     </head>
 	<body>
 	<div class="content">
@@ -326,7 +359,11 @@
 
         		// BEGIN DO NOT EDIT SECTION 
         		alert("Payment Completed - Purchase Successful")
-        		// END DO NOT EDIT SECTION 
+        		// END DO NOT EDIT SECTION
+
+			//MSA - UET - TRACK EVENT - PURCHASE - START
+			uet_report_conversion();
+			//MSA - UET - TRACK EVENT - PURCHASE - END
         	}
         </script>
         <!-- END TIKTOK PIXEL EVENT FUNCTIONS SCRIPT SECTION -->
