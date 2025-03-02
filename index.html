@@ -69,9 +69,9 @@
 	
 	<!-- MSA UET - TRACK EVENT - START -->
 	 <script>
-	    function uet_report_conversion() {
+	    function uet_report_conversion(productId) {
 	     window.uetq = window.uetq || [];
-	     window.uetq.push('event', 'PRODUCT_PURCHASE', {"ecomm_prodid":"DUMMY_PRODUCT_ID","ecomm_pagetype":"PURCHASE"});
+	     window.uetq.push('event', 'PRODUCT_PURCHASE', {"ecomm_prodid":productId,"ecomm_pagetype":"PURCHASE"});
 	    }
 	 </script>
 	<!-- MSA UET - TRACK EVENT - END -->
@@ -254,6 +254,12 @@
 
 				// ttq.instance("CBF39ABC77U9HKUD62VG").track("ViewContent")
 
+
+			//MSA - UET - Product views - START
+			window.uetq = window.uetq || [];
+			window.uetq.push('event', '', {'ecomm_prodid': productId, 'ecomm_pagetype': 'product'});
+			//MSA - UET - Product views - END
+
         		// END - PLACE YOUR FUNCTIONS IN THIS SECTION 
         	}
 
@@ -362,7 +368,7 @@
         		// END DO NOT EDIT SECTION
 
 			//MSA - UET - TRACK EVENT - PURCHASE - START
-			uet_report_conversion();
+			uet_report_conversion('5678AB');
 			//MSA - UET - TRACK EVENT - PURCHASE - END
         	}
         </script>
