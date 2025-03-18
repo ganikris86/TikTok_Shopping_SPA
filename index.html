@@ -310,6 +310,27 @@
 
         		// END - PLACE YOUR FUNCTIONS IN THIS SECTION 
 
+
+			//MSA - UET
+			//Enhanced conversions - START
+			uetq = uetq || [];
+   			uetq.push('set', { 'pid': { 
+			      'em': 'contoso@example.com', // Replace with the variable that holds the user's email address. 
+			      'ph': '+14250000000', // Replace with the variable that holds the user's phone number. 
+			} });
+			//Enhanced conversions - END
+
+			//Custom event - Track Checkout - START
+			uetq.push('event', 'main_checkout', 
+				  {"event_label":"shopping",
+				   "event_value":29.99,
+				   "event_category":"eComm_product",
+				   "revenue_value":39.99,
+				   "currency":"SGD"
+				  });
+			//Custom event - Track Checkout - END
+			//MSA - UET
+
                 // BEGIN DO NOT EDIT SECTION 
         		   completePayment();
         		} else {	
